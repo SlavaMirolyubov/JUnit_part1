@@ -84,4 +84,9 @@ class UtilsTest {
             utils.computeFactorial(200);
         });
     }
+
+    @Test
+    void computeFactorialZero() {
+        assertEquals(BigInteger.valueOf(1), utils.computeFactorial(0));
+    }
 }
